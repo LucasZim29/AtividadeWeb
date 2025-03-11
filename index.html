@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atv Prática 4</title>
+    <style>
+        * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        border: 1px solid black;
+        padding: 15px;
+      }
+
+      .menu {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid black;
+      }
+
+      .main {
+        width: 75%;
+        float: left;
+        padding: 15px;
+        border: 1px solid black;
+      }
+      .row::after {
+            content: "";
+            clear: both;
+            display: table;
+      }
+      
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 1px solid black;
+      }
+
+    ol li{
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    ul li{
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+      }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1 id="Título">Bolo de cenoura e cobertura de chocolate</h1>
+
+        <button type="button" onclick=
+        'document.getElementById("Título").innerHTML = "Bolo de cobertura - Cenoura com chocolate"'> Alterar Título</button>
+
+    </div>
+    
+    
+    <div class="row">
+        <div class= "col-3">
+        <h2>Ingredientes</h2> 
+    
+
+    
+        <h3>Bolo de Cenoura</h3>
+            <ul>
+                <li>270g Cenoura</li>
+                <li>1 xícara chá de Óleo</li>
+                <li>3  unidades de Ovos</li>
+                <li>2 xícaras chá de Açúcar</li>
+                <li>2 xícaras chá de Farinha de Trigo</li>
+                <li>1 colher sopa de Fermento em pó</li>
+            </ul>
+    
+
+    
+        <h3>Brigadeiro</h3>
+        <ul>
+            <li>3 latas de Leite Condensado</li>
+            <li>4 colheres sopa de Chocolate em pó</li>
+            <li>1 colher sopa de Manteiga</li>
+            <li>3 caixas de Creme de Leite</li>
+            <li>200g Cobertura em Moedas</li>
+        </ul>
+        <hr>
+
+        <h3>
+            <a href="https://www.oetker.com.br/receitas/r/bolo-de-cenoura-e-cobertura-de-chocolate" target="_blank"
+            >Clique aqui para acessar o site original da receita</a> </h3>
+    </div>
+    
+
+        
+
+   
+        <div class="col-9">
+        <h2 id="subt">Modo de Preparo</h2>
+        <button type="button" onclick="document.getElementById('subt').style.color='red'">Alterar cor</button>
+        <hr>
+        <h3>Bolo</h3>
+            <ol>
+                <li>Bata a cenoura, o óleo, os ovos e o açúcar no 
+                    liquidificador até obter uma mistura homogênea.</li>
+
+                <li>Em uma tigela, peneire a farinha de trigo e adicione o 
+                    Fermento em pó. Adicione a mistura do liquidificador e 
+                    mexa bem até incorporar todos os ingredientes.</li>
+
+                <li>Unte uma forma retangular de 30x22cm com manteiga e 
+                    farinha. Despeje a massa na forma. Asse em forno 
+                    pré-aquecido a 180 graus por aproximadamente 45 minutos.</li>
+
+                <li>Deixe o bolo esfriar, desenforme e corte ao meio no sentido 
+                    horizontal. Reserve.</li>
+            </ol>
+        
+        <hr>
+        
+            <h3>Brigadeiro</h3>
+        <ol>
+            <li>Em uma panela, derreta a manteiga em fogo médio. 
+                Adicione o leite condensado e o chocolate em pó, 
+                mexendo sempre. </li>
+            <li>Cozinhe a mistura, mexendo constantemente, até 
+                começar a borbulhar (aproximadamente 15 minutos). </li>
+            <li>Adicione o chocolate em cobertura e continue 
+                mexendo por mais 5 minutos.</li>
+            <li>Desligue o fogo, adicione o creme de leite e misture bem.
+                 Deixe esfriar.</li>
+        </ol>
+            
+        <hr>
+
+    <h3>Montagem</h3>
+        <ol>
+            <li>Recheie uma das partes do bolo previamente cortadas com o 
+                brigadeiro, cubra com a outra parte do bolo.</li>
+            <li>Derreta a cobertura de chocolate conforme as instruções 
+                da embalagem e espalhe sobre o bolo.</li>
+        </ol>
+    
+
+    <img id="img" src="98fcbf5e-88db-4bcd-8b26-b92f0d7c7c0b.webp
+    " alt="" style="width: 45%;">
+
+    <button onclick="document.getElementById('img').src='98fcbf5e-88db-4bcd-8b26-b92f0d7c7c0b.webp'"><</button>
+    <button onclick="document.getElementById('img').src='579956ac-7dbd-4617-9d0a-23d13ec6b9d8.webp'">></button>
+    
+    <button type="button" onclick="document.getElementById('img').style.display='none'">Esconder</button>
+    <button type="button" onclick="document.getElementById('img').style.display='block'">Mostrar</button>
+
+</div>
+</div>
+</div>
+    
+    
+</body>
+</html>
